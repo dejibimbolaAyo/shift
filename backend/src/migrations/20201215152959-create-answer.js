@@ -8,11 +8,21 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      user_id: {
-        type: Sequelize.INTEGER
-      },
-      question_id: {
-        type: Sequelize.INTEGER
+			user_id: {
+				type: Sequelize.INTEGER,
+				references: {
+					model: 'users',
+					key: 'id'
+				},
+				allowNull: false
+			},
+			question_id: {
+				type: Sequelize.INTEGER,
+				references: {
+					model: 'questions',
+					key: 'id'
+				},
+				allowNull: false
       },
       response: {
         type: Sequelize.INTEGER
