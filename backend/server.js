@@ -1,10 +1,13 @@
 const express = require('express')
-const cors = require('cors');
-const router = require('./src/routes');
-
 const app = express();
+const router = express.Router();
+const cors = require('cors');
+const { routes } = require('./src/routes');
 
 app.use(cors());
-app.use('/api/v1/', router);
+app.use(express.json());
 
-app.listen(8081, () => console.log(`Listening on port 8081`));
+routes(router);
+
+app.use('/api/v1/', router);
+app.listen(8090, () => console.log(`Listening on port 8090`));

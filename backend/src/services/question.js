@@ -1,5 +1,6 @@
-const Question = require("../models/question");
+const db = require("../models");
 
-exports.getQuestions = () => {
-	
+exports.getQuestions = async () => {
+	const questions = await db.Question.findAll();
+	return questions;
 }
