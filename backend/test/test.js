@@ -30,7 +30,7 @@ describe('getRanking()', function () {
 	});
 });
 describe('getRanking()', function () {
-	it('should return ENTP given [1, 5, 4, 6, 5, 2, 6, 3, 3, 2]', function () {
+	it('should return ESTJ given [1, 5, 4, 6, 5, 2, 6, 3, 3, 2]', function () {
 
 		// 1. ARRANGE
 		const questions = [
@@ -58,7 +58,7 @@ describe('getRanking()', function () {
 	});
 });
 describe('getRanking()', function () {
-	it('should return ENTP given [3, 2, 6, 1, 7, 3, 2, 5, 2, 7]', function () {
+	it('should return INFP given [3, 2, 6, 1, 7, 3, 2, 5, 2, 7]', function () {
 
 		// 1. ARRANGE
 		const questions = [
@@ -86,7 +86,7 @@ describe('getRanking()', function () {
 	});
 });
 describe('getRanking()', function () {
-	it('should return ENTP given [3, 4, 7, 1, 2, 5, 4, 3, 2, 6]', function () {
+	it('should return ISFP given [3, 4, 7, 1, 2, 5, 4, 3, 2, 6]', function () {
 
 		// 1. ARRANGE
 		const questions = [
@@ -114,7 +114,7 @@ describe('getRanking()', function () {
 	});
 });
 describe('getRanking()', function () {
-	it('should return ENTP given [4, 4, 4, 4, 4, 4, 4, 4, 4, 4]', function () {
+	it('should return ESTJ given [4, 4, 4, 4, 4, 4, 4, 4, 4, 4]', function () {
 
 		// 1. ARRANGE
 		const questions = [
@@ -142,7 +142,7 @@ describe('getRanking()', function () {
 	});
 });
 describe('getRanking()', function () {
-	it('should return ENTP given [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]', function () {
+	it('should return ISTJ given [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]', function () {
 
 		// 1. ARRANGE
 		const questions = [
@@ -170,7 +170,7 @@ describe('getRanking()', function () {
 	});
 });
 describe('getRanking()', function () {
-	it('should return ENTP given [7, 7, 7, 7, 7, 7, 7, 7, 7, 7]', function () {
+	it('should return ESTP given [7, 7, 7, 7, 7, 7, 7, 7, 7, 7]', function () {
 
 		// 1. ARRANGE
 		const questions = [
