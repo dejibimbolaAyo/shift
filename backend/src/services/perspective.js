@@ -1,32 +1,27 @@
+const { getRanking } = require("../helpers/perspective");
 const db = require("../models");
+const { getQuestions } = require("./question");
 
-exports.computeScore = async () => {
+exports.computeScore = async (answer) => {
+
 	// const answers = await db.Answer.create({})
-	let perspective = {}
+	const questions = await getQuestions({
+		attributes: ['dimension', 'direction']
+	});
+	let perspective = getRanking(questions, answer)
 	// On successfully persisting answers compute perspective
-	if (true) {
-		// call perspective helper and get computation
-		perspective = {
-			type: 'ENTP',
-			analysis: {
-				'EI': {
-					'E': 4,
-					'I': 7
-				},
-				'SN': {
-					'S': 4,
-					'N': 7
-				},
-				'TF': {
-					'T': 6,
-					'F': 4
-				},
-				'JP': {
-					'J': 5,
-					'P': 3
-				},
-			}
+	return perspective;
+}
+
+exports.saveResponse = async (user, answers) => {
+	const data = []
+	for (index in answers) {
+		data[index] = {
+			'user_id': user.id,
+			'question_id': parseInt(index) + 1,
+			'response': answers[index]
 		}
 	}
-	return perspective;
+	const savedAnswer = await db.Answer.bulkCreate(data);
+	return savedAnswer;
 }

@@ -27,7 +27,7 @@ module.exports = {
 			{
 				question: 'You get energized going to social events that involve many interactions.',
 				dimension: 'EI',
-				direction: 1,
+				direction: -1,
 				createdAt: '2020-02-16 13:23:17',
 				updatedAt: '2020-02-16 13:23:17'
 			},
@@ -69,7 +69,7 @@ module.exports = {
 			{
 				question: 'Keeping your options open is more important than having a to-do list.',
 				dimension: 'JP',
-				direction: -1,
+				direction: 1,
 				createdAt: '2020-02-16 13:23:17',
 				updatedAt: '2020-02-16 13:23:17'
 			},
