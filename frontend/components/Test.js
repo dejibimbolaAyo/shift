@@ -55,7 +55,6 @@ export default function Test({ }) {
 
 	const handleSubmit = (e) => {
 		e.preventDefault()
-		console.log(mutation.isLoading)
 		mutation.mutate();
 	}
 

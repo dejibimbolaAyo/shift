@@ -1,7 +1,6 @@
 import React from 'react'
 
 function Perspective({ perspective }) {
-	console.log("dafs", perspective)
 	return (
 		<div className="relative bg-gray-50">
 			<div className="container mx-auto">
