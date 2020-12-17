@@ -5,15 +5,16 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next build && next start"
   },
   "dependencies": {
     "framer-motion": "^2.9.4",
     "next": "^10.0.1",
-    "prop-types": "^15.7.2",
     "react": "^16.13.1",
-    "react-cool-onclickoutside": "^1.5.8",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-query": "^3.2.0",
+    "react-radio-group": "^3.0.3",
+    "react-toastify": "^6.2.0"
   },
   "devDependencies": {
     "postcss-flexbugs-fixes": "4.2.1",
