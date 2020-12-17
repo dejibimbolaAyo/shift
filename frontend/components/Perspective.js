@@ -16,7 +16,7 @@ function Perspective({ perspective }) {
 								<div className="flex py-2">
 									<span className="w-12 mr-10 text-xs text-right text-gray-700 lg:text-sm">Extroversion(E)</span>
 									<div className="flex px-4 py-1 mx-4">
-										<div className={`w-12 lg:w-32 h-2 lg:h-3 rounded-l-sm ${perspective.analysis.EI.E > perspective.analysis.EI.I ? "bg-pink-700" : "bg-gray-300"}`}></div>
+										<div className={`w-12 lg:w-32 h-2 lg:h-3 rounded-l-sm ${perspective.analysis.EI.E >= perspective.analysis.EI.I ? "bg-pink-700" : "bg-gray-300"}`}></div>
 										<div className={`w-12 lg:w-32 h-2 lg:h-3 rounded-r-sm ${perspective.analysis.EI.I > perspective.analysis.EI.E ? "bg-pink-700" : "bg-gray-300"}`}></div>
 									</div>
 									<span className="text-xs text-gray-700 lg:text-sm">Introversion(I)</span>
@@ -24,7 +24,7 @@ function Perspective({ perspective }) {
 								<div className="flex py-2">
 									<span className="w-12 mr-10 text-xs text-right text-gray-700 lg:text-sm">Sensing(S)</span>
 									<div className="flex px-4 py-1 mx-4">
-										<div className={`w-12 lg:w-32 h-2 lg:h-3 rounded-l-sm ${perspective.analysis.SN.S > perspective.analysis.SN.N ? "bg-pink-700" : "bg-gray-300"}`}></div>
+										<div className={`w-12 lg:w-32 h-2 lg:h-3 rounded-l-sm ${perspective.analysis.SN.S >= perspective.analysis.SN.N ? "bg-pink-700" : "bg-gray-300"}`}></div>
 										<div className={`w-12 lg:w-32 h-2 lg:h-3 rounded-r-sm ${perspective.analysis.SN.N > perspective.analysis.SN.S ? "bg-pink-700" : "bg-gray-300"}`}></div>
 									</div>
 									<span className="text-xs text-gray-700 lg:text-sm">Intuition(N)</span>
@@ -32,7 +32,7 @@ function Perspective({ perspective }) {
 								<div className="flex py-2">
 									<span className="w-12 mr-10 text-xs text-right text-gray-700 lg:text-sm">Thinking(T)</span>
 									<div className="flex px-4 py-1 mx-4">
-										<div className={`w-12 lg:w-32 h-2 lg:h-3 rounded-l-sm ${perspective.analysis.TF.T > perspective.analysis.TF.F ? "bg-pink-700" : "bg-gray-300"}`}></div>
+										<div className={`w-12 lg:w-32 h-2 lg:h-3 rounded-l-sm ${perspective.analysis.TF.T >= perspective.analysis.TF.F ? "bg-pink-700" : "bg-gray-300"}`}></div>
 										<div className={`w-12 lg:w-32 h-2 lg:h-3 rounded-r-sm ${perspective.analysis.TF.F > perspective.analysis.TF.T ? "bg-pink-700" : "bg-gray-300"}`}></div>
 									</div>
 									<span className="text-xs text-gray-700 lg:text-sm">Feeling(F)</span>
@@ -40,7 +40,7 @@ function Perspective({ perspective }) {
 								<div className="flex py-2">
 									<span className="w-12 mr-10 text-xs text-right text-gray-700 lg:text-sm">Judging(J)</span>
 									<div className="flex px-4 py-1 mx-4">
-										<div className={`w-12 lg:w-32 h-2 lg:h-3 rounded-l-sm ${perspective.analysis.JP.J > perspective.analysis.JP.P ? "bg-pink-700" : "bg-gray-300"}`}></div>
+										<div className={`w-12 lg:w-32 h-2 lg:h-3 rounded-l-sm ${perspective.analysis.JP.J >= perspective.analysis.JP.P ? "bg-pink-700" : "bg-gray-300"}`}></div>
 										<div className={`w-12 lg:w-32 h-2 lg:h-3 rounded-r-sm ${perspective.analysis.JP.P > perspective.analysis.JP.J ? "bg-pink-700" : "bg-gray-300"}`}></div>
 									</div>
 									<span className="text-xs text-gray-700 lg:text-sm">Perceiving(P)</span>
