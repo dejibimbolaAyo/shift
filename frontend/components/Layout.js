@@ -1,5 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Layout({ children, title = 'This is the default title' }) {
 	return (
@@ -17,6 +19,7 @@ export default function Layout({ children, title = 'This is the default title' }
 			</Head >
 			<div className="box-border min-h-screen m-0 antialiased">
 				<div>
+					<ToastContainer />
 					{children}
 				</div>
 			</div>
