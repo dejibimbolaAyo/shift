@@ -1,23 +1,23 @@
 {
   "development": {
-    "username": "root",
-		"password": "root",
+		"username": "shift",
+		"password": "password",
     "database": "perspective",
-    "host": "127.0.0.1",
+		"host": "shift_database",
     "dialect": "mysql"
   },
   "test": {
-    "username": "root",
-		"password": "root",
+		"username": "shift",
+		"password": "password",
     "database": "perspective",
-    "host": "127.0.0.1",
+		"host": "shift_database",
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-		"password": "root",
+		"username": "shift",
+		"password": "password",
     "database": "perspective",
-    "host": "127.0.0.1",
+		"host": "shift_database",
     "dialect": "mysql"
   }
 }

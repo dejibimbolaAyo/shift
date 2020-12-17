@@ -2,13 +2,17 @@ version: '3'
 
 services:
   db:
+    container_name: shift_database
     image: mysql/mysql-server:8.0
-    command: --default-authentication-plugin=mysql_native_password
+    command: --init-file /data/application/init.sql
+    volumes:
+        - ./backend/database/mysql.init.sql:/data/application/init.sql
     restart: always
     environment:
-      MYSQL_ROOT_HOST: "%"
       MYSQL_ROOT_PASSWORD: verysecuredpassword
       MYSQL_DATABASE: perspective
+      MYSQL_USER: shift
+      MYSQL_PASSWORD: password
     ports:
       - "3306:3306"
   adminer:
@@ -24,5 +28,5 @@ services:
   frontend:
     build: ./frontend
     ports: 
-      - "8080:8080"
+      - "8080:3000"
       
