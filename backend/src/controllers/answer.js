@@ -13,7 +13,7 @@ exports.postAnswers = async (req, res) => {
 	}
 
 	if (!data.email) {
-		return res.satus(403).json({
+		return res.status(403).json({
 			message: 'Please provide an email address'
 		})
 	}

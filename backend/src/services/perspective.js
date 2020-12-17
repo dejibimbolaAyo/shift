@@ -19,7 +19,7 @@ exports.computeScore = async () => {
 				},
 				'TF': {
 					'T': 6,
-					'I': 4
+					'F': 4
 				},
 				'JP': {
 					'J': 5,
