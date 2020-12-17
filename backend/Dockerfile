@@ -4,4 +4,4 @@ COPY . /home/app
 RUN npm install
 CMD npm run start
 
-EXPOSE 8080
+EXPOSE 8090
