@@ -8,7 +8,27 @@ import Question from './Question';
 export default function Test({ }) {
 	const [answers, setAnswers] = useState({});
 	const [email, setEmail] = useState('');
-	const [perspective, setPerspective] = useState(false)
+	const [tested, setTested] = useState(false)
+	const [perspective, setPerspective] = useState({
+		analysis: {
+			EI: {
+				E: 0,
+				I: 0
+			},
+			SN: {
+				S: 0,
+				N: 0
+			},
+			TF: {
+				T: 0,
+				F: 0
+			},
+			JP: {
+				J: 0,
+				P: 0
+			}
+		}
+	})
 
 	const setEmailValue = (email) => setEmail(s => email)
 	const setResponses = (answers) => setAnswers(s => {
@@ -42,6 +62,7 @@ export default function Test({ }) {
 			if (data.status === 200) {
 				const res = await data.json()
 				setPerspective(res)
+				setTested(true)
 				toast.success("Response submitted", {
 					position: "top-right",
 					autoClose: 3000,
@@ -60,7 +81,7 @@ export default function Test({ }) {
 
 	return (
 		<div>
-			{perspective
+			{tested
 				? <Perspective perspective={perspective}></Perspective>
 				: <div className="relative bg-gray-50">
 					<div className="container mx-auto">

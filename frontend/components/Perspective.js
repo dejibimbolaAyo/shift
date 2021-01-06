@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function Perspective({ perspective }) {
 	return (
@@ -6,12 +6,12 @@ function Perspective({ perspective }) {
 			<div className="container mx-auto">
 				<div className="py-10">
 					<div className="border rounded-md border-gray-50">
-						<div className="flex justify-between">
+						<div className="justify-between lg:flex">
 							<div className="px-10 py-16 lg:px-16">
 								<h2 className="text-xl font-semibold text-blue-900 lg:text-2xl">Your Perspective</h2>
 								<p className="text-xs font-semibold leading-loose lg:text-sm">Your Perspective Type is {perspective.type}</p>
 							</div>
-							<div className="px-10 py-16 lg:px-20">
+							<div className="px-10 py:8 lg:py-16 lg:px-20">
 								<div className="flex py-2">
 									<span className="w-12 mr-10 text-xs text-right text-gray-700 lg:text-sm">Extroversion(E)</span>
 									<div className="flex px-4 py-1 mx-4">
