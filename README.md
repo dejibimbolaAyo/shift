@@ -3,16 +3,10 @@
 Running the solution
 Ensure to have Docker installed
 
-Run the following command from the project root to build the Docker images
+Run the following command from the project root to build the Docker images (for the first time) and spin up the containers
 
 ```bash
-docker-compose build
-```
-
-Once the build process is complete, run the following command to spin up the containers
-
-```bash
-docker-compose up
+docker-compose up -d
 ```
 
 While the containers are being spun up, a test is run on the API server to test the perspective calculations based on the test cases provided in the `/Data/TestCase.csv` file included in the challenge file.
